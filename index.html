@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Victoria's Secret</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- React and ReactDOM scripts -->
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <h1><img src="./img/logo.png"></h1>
+      </div>
+      <div class="mobile-menu-toggle">☰</div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#" class="nav-button">Startseite</a></li>
+          <li><a href="#" class="nav-button">Kollektion</a></li>
+          <li><a href="#" class="nav-button">Über uns</a></li>
+          <li><a href="#" class="nav-button">Kontakt</a></li>
+        </ul>
+      </nav>
+      <div class="icons">
+        <a href="#" class="icon search">🔍</a>
+        <a href="#" class="icon cart">🛒</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1 class="hero-title">Eleganz Kollektion</h1>
+            <h2 class="hero-subtitle">Entdecken Sie unsere neue Luxuskollektion</h2>
+            <a href="#" class="shop-now-btn">Entdecken</a>
+          </div>
+          <div class="hero-image">
+            <img src="./img/gi-removebg-preview (1).png" alt="Frau in eleganter Lingerie" />
+          </div>
+        </div>
+        <div class="pagination">
+          <span class="current">01</span>
+          <span class="separator">/</span>
+          <span class="total">05</span>
+        </div>
+      </section>
+
+      <section class="featured-products">
+        <h2 class="section-title">Unsere Kollektionen</h2>
+        <div class="product-categories">
+          <div class="category-card">
+            <img src="./img/1.png" alt="Lingerie" />
+            <h3>Lingerie</h3>
+          </div>
+          <div class="category-card">
+            <img src="img/3.png" alt="Schlafanzüge" />
+            <h3>Schlafanzüge</h3>
+          </div>
+          <div class="category-card">
+            <img src="./img/a.png" alt="Accessoires" />
+            <h3>Accessoires</h3>
+          </div>
+        </div>
+      </section>
+
+      <section class="product-quality">
+        <div class="quality-content">
+          <h2 class="section-title">Hohe Qualität Materialien</h2>
+          <p>
+            Victoria's Secret ist bekannt für hochwertige Kleidung, die Stil und Komfort vereint. Unsere Materialien werden sorgfältig ausgewählt, um Komfort und Langlebigkeit zu gewährleisten. Unsere Designs vereinen Eleganz und Funktionalität, was sie zur bevorzugten Wahl vieler Frauen weltweit macht.
+          </p>
+          <div class="size-selection">
+            <button class="size-btn active">XS</button>
+            <button class="size-btn">S</button>
+            <button class="size-btn">M</button>
+            <button class="size-btn disabled">L</button>
+          </div>
+          <button class="add-to-cart">In den Warenkorb</button>
+        </div>
+      </section>
+
+      <section class="product-showcase">
+        <h2 class="section-title">Unsere Hauptprodukte</h2>
+        <h3 class="category">Schlafanzug Kollektion</h3>
+        <div class="products-grid" id="pyjama-products">
+          <div class="product-card">
+            <img src="./img/5.png" class="product-image" alt="Seidenschlafanzug" />
+            <div class="product-info">
+              <span class="product-name">Seidenschlafanzug</span>
+              <span class="product-price">129 €</span>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="./img/6.png" class="product-image" alt="Satin Nachtset" />
+            <div class="product-info">
+              <span class="product-name">Satin Nachtset</span>
+              <span class="product-price">159 €</span>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="./img/7.png" class="product-image" alt="Spitzen-Nachthemd" />
+            <div class="product-info">
+              <span class="product-name">Spitzen-Nachthemd</span>
+              <span class="product-price">99 €</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pagination-dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </section>
+
+      <section class="newsletter-section">
+        <div class="newsletter-content">
+          <h2 class="section-title">Abonnieren Sie unseren Newsletter</h2>
+          <p>Seien Sie die Ersten, die unsere neuen Kollektionen und exklusiven Angebote entdecken</p>
+          <div class="subscribe-form">
+            <input type="email" placeholder="Ihre E-Mail" />
+            <button class="subscribe-btn">Abonnieren</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="comments">
+        <h2 class="section-title">Kundenbewertungen</h2>
+        <div class="testimonials">
+          <div class="testimonial">
+            <p>"Die Produkte sind von außergewöhnlicher Qualität, ich bin seit Jahren Kundin und wurde nie enttäuscht."</p>
+            <span class="client-name">— Sophie L.</span>
+          </div>
+          <div class="testimonial">
+            <p>"Der Komfort der Stoffe und das elegante Design sorgen dafür, dass ich immer wieder zu Victoria's Secret zurückkomme."</p>
+            <span class="client-name">— Marie C.</span>
+          </div>
+        </div>
+
+        <div class="social-media">
+          <h3>Folgen Sie uns</h3>
+          <div class="social-icons">
+            <a href="#" class="social-icon">
+              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/instagram.svg" alt="Instagram" />
+            </a>
+            <a href="#" class="social-icon">
+              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/facebook.svg" alt="Facebook" />
+            </a>
+            <a href="#" class="social-icon">
+              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/pinterest.svg" alt="Pinterest" />
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-nav">
+          <div class="footer-column">
+            <h4>Shop</h4>
+            <ul>
+              <li><a href="#">Neuheiten</a></li>
+              <li><a href="#">Kollektionen</a></li>
+              <li><a href="#">Angebote</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Über uns</h4>
+            <ul>
+              <li><a href="#">Unsere Geschichte</a></li>
+              <li><a href="#">Unsere Werte</a></li>
+              <li><a href="#">Nachhaltigkeit</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Kundenservice</h4>
+            <ul>
+              <li><a href="#">Lieferung</a></li>
+              <li><a href="#">Rücksendungen</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="footer-column contact-info">
+            <h4>Kontakt</h4>
+            <p>Flughafenstrasse 9, 8302 Kloten, Schweiz</p>
+            <p>Tel: +41 78 932 00 31</p>
+            <p>E-Mail: kontakt@victoriassecret.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>© 2025 Victoria's Secret - Alle Rechte vorbehalten</p>
+      </div>
+    </footer>
+
+    <!-- Our script loads last -->
+    <script src="script.js"></script>
+  </body>
+</html>
