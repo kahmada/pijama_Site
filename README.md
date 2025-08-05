@@ -10,10 +10,10 @@
   <h1>🛏️ Pijama Collection Website</h1>
 
   <p>This is a simple front-end website showcasing a collection of pyjamas. It is built using only HTML, CSS, and JavaScript.</p>
-  <img src="1.png" alt="Cub3D Screenshot 1" style="max-width:100%; border-radius:8px; margin-bottom: 1rem;" />
-  <img src="2.png" alt="Cub3D Screenshot 1" style="max-width:100%; border-radius:8px; margin-bottom: 1rem;" />
-  <img src="3.png" alt="Cub3D Screenshot 1" style="max-width:100%; border-radius:8px; margin-bottom: 1rem;" />
-  <img src="4.png" alt="Cub3D Screenshot 1" style="max-width:100%; border-radius:8px; margin-bottom: 1rem;" />
+  <img src="/img/1.png" alt="" style="max-width:100%; border-radius:8px; margin-bottom: 1rem;" />
+  <img src="/img/2.png" alt="" style="max-width:100%; border-radius:8px; margin-bottom: 1rem;" />
+  <img src="/img/3.png" alt="" style="max-width:100%; border-radius:8px; margin-bottom: 1rem;" />
+  <img src="/img/4.png" alt="" style="max-width:100%; border-radius:8px; margin-bottom: 1rem;" />
   <h2>📦 Technologies Used</h2>
   <ul>
     <li>HTML5</li>
